@@ -190,8 +190,63 @@ ul.card li:last-child {
   padding: 18px 20px;
 }
 
-body.dark .guestbook-item {
+.info-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.info-table th,
+.info-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.info-table thead th {
+  background: #eef2ff;
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.info-table .info-label {
+  width: 170px;
+  font-weight: 700;
+  color: #374151;
+  background: #f8fafc;
+}
+
+.info-table .info-value {
+  color: #111827;
+}
+
+body.dark .info-table {
   background: #1f2937;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+body.dark .info-table th,
+body.dark .info-table td {
+  border-bottom: 1px solid #374151;
+}
+
+body.dark .info-table thead th {
+  background: #1e293b;
+  color: #e5e7eb;
+}
+
+body.dark .info-table .info-label {
+  background: #111827;
+  color: #e5e7eb;
+}
+
+body.dark .info-table .info-value {
+  color: #f3f4f6;
 }
 
 .guestbook-name {
