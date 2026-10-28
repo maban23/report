@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>my-web · 방명록</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
   </head>
   <body>
     <header>
@@ -23,21 +24,23 @@
         <li>메시지를 적는다.</li>
         <li>남기기 버튼을 누른다.</li>
       </ol>
-      <form>
+      <form id="guestbookForm">
         <p>
           <label for="name">이름</label>
-          <input id="name" type="text">
+          <input id="name" type="text" required>
         </p>
         <p>
           <label for="email">이메일</label>
-          <input id="email" type="email">
+          <input id="email" type="email" required>
         </p>
         <p>
           <label for="message">메시지</label>
-          <textarea id="message" rows="4"></textarea>
+          <textarea id="message" rows="4" required></textarea>
         </p>
         <button type="submit">남기기</button>
       </form>
+
+      <div id="guestbookList" class="guestbook-list" aria-live="polite"></div>
     </main>
     <footer>
       <p>수업용 연습 페이지 · 민지성</p>
